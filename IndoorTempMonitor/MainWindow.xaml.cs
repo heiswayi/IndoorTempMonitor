@@ -321,7 +321,9 @@ namespace IndoorTempMonitor
             {
                 Position = AxisPosition.Left,
                 Title = "Temperature (°C)",
-                MinimumMajorStep = 10
+                AbsoluteMaximum = 100,
+                AbsoluteMinimum = 0,
+                MinorStep = 5
             });
 
             DataCollection = new Collection<TemperatureData>();
